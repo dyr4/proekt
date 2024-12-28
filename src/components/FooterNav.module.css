@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+    
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+    
+.nav li {
+    margin: 0 10px;
+}
+
+.nav li:hover {
+    text-decoration: underline;
+}
+    
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,107 @@
+.form_contact {
+    width: 1200px;
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+}
+
+.input {
+    margin-left: 10px;
+    position: relative;
+    width: 70%;
+}
+
+.contact_text {
+    color: #26533f;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.phone {
+    margin: 10px 0;
+    height: 20px;
+    width: 192px;
+    border-color: #26533f;
+}
+
+.btn {
+    margin-left: 10px;
+    height: 26px;
+    width: 200px;
+    background-color: #26533f;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #278d5f;
+}
+
+.output {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+
+}
+
+.separator {
+    width: 1px;
+    max-height: 80%;
+    background-color: #479974;
+    margin: 10px 5px;
+}
+
+.output_text {
+    color: #26533f;
+    font-size: 1.2em;
+    line-height: 1.5;
+    animation: total-appear 1.2s ease-out;
+}
+
+@keyframes total-appear {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+	.form_contact {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+    .container {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+	.input {
+		display: flex;
+        align-items: center;
+        flex-direction: column;
+	}
+    .btn {
+        margin: 0 0 10px 0;
+        height: 36px;
+        width: 300px;
+    }
+    .phone {
+        height: 30px;
+        width: 292px;
+    }
+    .output {
+        width: 100%;
+    }
+}
